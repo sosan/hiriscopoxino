@@ -8,4 +8,4 @@ class TemplateFormularioHoroscopo(Form):
         validators.length(
             min=4, max=5, message="Año no permitido"),
         validators.optional(strip_whitespace=True)
-    ], description="Introduce Año:"
+    ], description="Introduce Año:")

@@ -1,5 +1,9 @@
+
+import os
 from flask import Flask, render_template, make_response, abort, redirect, url_for, request
 from wtforms import StringField, validators
+
+from moduloTemplateFormularioHoroscopo import TemplateFormularioHoroscopo
 
 
 # instancias
