@@ -1,4 +1,9 @@
 {% extends "base.html" %}
 {{ super() }}
 
-{% block content %} {% endblock %}
+{% block content %}
+
+{{ dataForm.anyo.label }}
+{{ dataForm.anyo(size="4") }}
+
+{% endblock %}

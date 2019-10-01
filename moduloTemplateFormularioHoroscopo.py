@@ -1,4 +1,10 @@
+"""
+MODULO HORSCOPOS
+"""
+
+
 from wtforms import StringField, validators
+from wtforms import Form
 
 
 class TemplateFormularioHoroscopo(Form):
@@ -9,3 +15,7 @@ class TemplateFormularioHoroscopo(Form):
             min=4, max=5, message="Año no permitido"),
         validators.optional(strip_whitespace=True)
     ], description="Introduce Año:")
+
+
+def calcularHoroscopo():
+    pass
