@@ -4,7 +4,6 @@ from flask import Flask, render_template, make_response, abort, redirect, url_fo
 from wtforms import StringField, validators
 
 from moduloTemplateFormularioHoroscopo import TemplateFormularioHoroscopo
-from horoscopo import
 
 
 # instancias
@@ -23,7 +22,6 @@ HOROSCOPO = {
 # shift + alt + f
 
 
-
 @app.route("/", methods=["GET", "POST"])
 def home():
 
@@ -34,7 +32,6 @@ def home():
             anyoInt = int(calcularHoroscopo(request.form.anyo))
 
             context = {}
-            return "POST"
             return render_template("bicho.html", datos=context)
         except ValueError:
             abort(404)
