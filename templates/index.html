@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {{ super() }}
 
-{% block content %}
+<!-- bloque foooter -->
+{% block footer %}
 
-{{ dataForm.anyo.label }}
-{{ dataForm.anyo(size="4") }}
+<form action="/" method="post">
+  {{ dataForm.anyo.label }}
+  {{ dataForm.anyo(size="4", required, maxlen="4", autofocus) }}
+</form>
 
 {% endblock %}
