@@ -7,11 +7,25 @@
     <title>{% block title %}Horoscopo chino{% endblock %}</title>
     <link rel="icon" href="{{ url_for("static", filename="images/favicon.ico")">
     <link rel="stylesheet" href="{{url_for("static", filename="css/reset.css") }}
-    " > 
-    <link rel="stylesheet" href="{{url_for("static", filename="css/main.css") }}
+    " > <link rel="stylesheet" href="{{url_for("static", filename="css/main.css") }}
     "> }}">
   </head>
   <body>
-    {% block content%} {% endblock %}
+    <header>
+      <h2 class="titulo">Titulo mandarin</h2>
+
+      {% block header %}{% endblock %}
+    </header>
+
+    <main>
+      <section class="logo">
+        <article class="logo__titulo">XX</article>
+        <article class="logo__subtitulo">Horoscopo chino</article>
+      </section>
+      {% block main %}{% endblock %}
+    </main>
+    <footer>
+      {% block footer %}{% endblock %}
+    </footer>
   </body>
 </html>
